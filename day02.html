@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>People at Clearleft</title>
+
+</style>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $("dt").click(function(){
+            if($(this).siblings().is(":visible")){
+                $(this).siblings().hide();
+                
+            }
+           else{
+               $(this).siblings().show();
+               $(this).parent().siblings().find("dd").hide();
+
+           }
+            
+        })
+    })
+</script>
+</head>
+<body>
+    <dl>
+        <dt>前端</dt>
+        <dd>vue</dd>
+        <dd>jQuery</dd>
+        <dd>css</dd>
+    </dl>
+    <dl>
+        <dt>后端</dt>
+        <dd>java</dd>
+        <dd>python</dd>
+        <dd>c++</dd>
+    </dl>
+</body>
+</html>
